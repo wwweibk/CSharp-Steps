@@ -1,3 +1,6 @@
+using Kompas6API5;
+
+
 using System;
 using Microsoft.Win32;
 using System.Reflection;
@@ -5,8 +8,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Globalization;
 using KAPITypes;
-using System.Resources;
-using Kompas6API5;
+using Kompas6Constants;
 
 namespace Step1
 {
@@ -64,7 +66,6 @@ namespace Step1
                 arr.ksDeleteArray();
             }
         }
-
         // --------------------------------------------------------------------------------
         // Пересечение двух кривых.
         // Возвращает:
