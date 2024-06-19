@@ -16,6 +16,12 @@ namespace Plugin1
     [ClassInterface(ClassInterfaceType.AutoDual)]
     public class Plugin1
     {
+        // Имя библиотеки
+        [return: MarshalAs(UnmanagedType.BStr)]
+        public string GetLibraryName()
+        {
+            return "Plugin1 - точки пересечения кривых";
+        }
 
         private KompasObject kompas;
         private ksDocument2D doc;
@@ -107,13 +113,6 @@ namespace Plugin1
         public static extern int ksIntersectCurvCurvEx(IntPtr p1, IntPtr p2, IntPtr pArr, int touchInclude);
 
 
-
-
-        [return: MarshalAs(UnmanagedType.BStr)]
-        public string GetLibraryName()
-        {
-            return "Plugin1 - точки пересечения кривых";
-        }
 
 
         [return: MarshalAs(UnmanagedType.BStr)]
