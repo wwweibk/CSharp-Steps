@@ -10,11 +10,11 @@ using System.Globalization;
 using KAPITypes;
 using Kompas6Constants;
 
-namespace Step1
+namespace Plugin1
 {
 
     [ClassInterface(ClassInterfaceType.AutoDual)]
-    public class Step1
+    public class Plugin1
     {
 
         private KompasObject kompas;
@@ -112,7 +112,7 @@ namespace Step1
         [return: MarshalAs(UnmanagedType.BStr)]
         public string GetLibraryName()
         {
-            return "Step2 - Использованиe математических функций";
+            return "Plugin1 - точки пересечения кривых";
         }
 
 
